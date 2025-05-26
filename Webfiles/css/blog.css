@@ -1,0 +1,64 @@
+/* giving style to hero video*/
+
+.hero video {
+  width: 100%;
+}
+
+/* giving style to content*/
+
+.content {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* giving style to articles*/
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* giving style to article*/
+
+.article {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 290px;
+  box-sizing: border-box;
+}
+
+/* giving style to article img */
+
+.article img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+.article h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+/* giving style to article p*/
+.article p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* giving style to article a*/
+
+.article a {
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+}

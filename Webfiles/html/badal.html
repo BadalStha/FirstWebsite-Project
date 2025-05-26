@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="/css/badal.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+
+    body {
+      background-color: #F8F5F1;
+    }
+  </style>
+  <title>Badal Shrestha</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div>
+
+      <div class="navigation-bar">
+
+        <div class="username">
+
+          <h1>Badal Shrestha</h1>
+
+        </div>
+
+        <div class="navigation-items">
+
+          <ul>
+
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+
+            <li>
+              <a href="#education"> Education </a>
+            </li>
+
+            <li>
+              <a href="#skills"> Skills </a>
+            </li>
+
+            <li>
+              <a href="#contact"> Contact </a>
+            </li>
+
+          </ul>
+
+        </div>
+      
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="hero-section">
+
+      <div class="home" id="home">
+
+        <div class="home-left">
+
+          <h1 class="home-heading">Hello, I am Badal Shrestha</h1>
+
+          <div class="home-description">
+
+            <p> IT Student </p>
+
+          </div>
+
+          <div class="home-button">
+
+            <button class="button" onclick="scrollToSection('contact')">
+
+              Get in touch
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="home-right">
+
+          <img src="/img/portfolio-badal.png" alt="Badal Shrestha"/>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="education">
+
+      <h1 class="section-heading">Education</h1>
+
+      <div class="education-details">
+
+        <div class="education-item">
+
+          <h2>Higher Secondary</h2>
+          <p>Shree Sajeelal Secondary School, Dulari</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="skills">
+
+      <h1 class="section-heading">Skills</h1>
+
+      <div class="skills-details">
+
+        <div class="skills-item">
+
+          <h2>HTML 5</h2>
+
+        </div>
+
+        <div class="skills-item">
+          <h2>CSS</h2>
+
+        </div>
+
+        <div class="skills-item">
+
+          <h2>SQL</h2>
+
+        </div>
+
+        <div class="skills-item">
+
+          <h2>Unity</h2>
+          
+        </div>
+
+        <div class="skills-item">
+
+          <h2>Java</h2>
+
+        </div>
+
+        <div class="skills-item">
+
+          <h2>Video Editing</h2>
+
+        </div>
+
+        <div class="skills-item">
+
+          <h2>Graphic Design</h2>
+
+        </div>
+
+        <div class="skills-item">
+
+          <h2>Chess</h2>
+
+        </div>
+
+    </section>
+
+    <section class="Contact-Section">
+
+      <div class="contact" id="contact">
+
+        <h1 class="section-heading">Contact</h1>
+        <div class="contact-form">
+
+          <form id="contactForm" onsubmit="return validateForm()">
+
+            <div class="form-group">
+
+              <label for="name">Name</label>
+              <input type="text" id="name"/>
+
+              <label for="email">Email</label>
+              <input type="email" id="email"/>
+
+              <label for="message">Message</label>
+              <textarea id="message"></textarea>
+
+              <button type="submit" class="button">Send Message</button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+    <!-- Footer Section -->
+
+  <footer>
+
+    <!-- Making main container for footer -->
+
+    <div class="footer-top">
+
+      <!-- Using table to make different columns -->
+
+      <table class="footer-table">
+        <tr>
+
+          <!-- About Us Section -->
+
+          <td>
+
+            <div class="footer-heading">
+              About
+            </div>
+
+            <div class="about-text">
+
+              An enthusiast IT student pursuing a degree in Hons Computing, passionate about technology and innovation. Skilled in problem-solving, software development, and emerging technologies. Committed to continuous learning and applying technical expertise to real-world challenges.
+
+            </div>
+
+          </td>
+
+          <!-- Quick Links Section -->
+
+          <td>
+            <div class="footer-heading">
+              Quick Links
+            </div>
+
+            <div class="quick-links">
+
+              <a href="#home">Home</a>
+              <a href="#about">Education</a>
+              <a href="#skills">Skills</a>
+              <a href="#contact">Contact</a>
+
+            </div>
+
+          </td>
+
+          <!-- Contact Us Section -->
+
+          <td>
+
+            <div class="footer-heading">
+              Contact
+            </div>
+
+            <div class="contact">
+
+              <p> Email: shresthabadal324@gmail.com</p>
+              <p> Phone: +977 9709028140 </p>
+
+            </div>
+            
+          </td>
+
+          <!-- Adding Logos from boxicons -->
+
+          <td>
+
+            <div class="footer-heading">
+              Follow Me
+            </div>
+
+            <div class="social-icon-holder">
+
+              <div class="social-icon">
+                <a href="https://www.facebook.com/badalshrestha0"><i class='bx bxl-facebook'></i></a>
+              </div>
+  
+              <div class="social-icon">
+                <a href="https://www.instagram.com/cloudy0_00_0/" target="_blank"><i class='bx bxl-instagram'></i></a>
+              </div>
+  
+              <div class="social-icon">
+                <a href="https://www.youtube.com/@dranimo0" target="_blank"><i class='bx bxl-youtube'></i></a>
+              </div>
+
+            </div>
+            
+          </td>
+
+        </tr>
+
+      </table>
+
+      <!-- Footer bottom for copyright section -->
+
+      <div class="footer-bottom">
+        <p> &copy Badal Shrestha. All rights reserved. </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Footer End -->
+  <script src="/js/badal.js"></script>
+</body>
+
+</html>

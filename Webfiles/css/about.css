@@ -1,0 +1,142 @@
+/* giving style to title*/
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+/* giving style to main container*/
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 240px;
+  margin: 80px;
+}
+
+/* giving style to member-card*/
+
+.member-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  width: 450px;
+  height: 550px;
+}
+
+.member-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s;
+}
+
+/* giving style to member-card img*/
+
+.member-card img {
+  height: 75%;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* giving style to member-card p*/
+
+.member-card p {
+  color: rgb(203, 173, 0);
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* giving style to member-card button*/
+
+.member-card button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+.member-card button:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Feedback Section CSS */
+
+.button {
+  padding: 16px 32px;
+  margin-top: 32px;
+  border: 1.25px solid #3498db;
+  color: #3498db;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* giving style to section-heading*/
+
+.section-heading {
+  text-align: center;
+}
+
+/* giving style to feedback*/
+
+.feedback {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: #f1f1f1;
+}
+
+/* giving style to contact-form*/
+
+.contact-form {
+  width: 350px;
+  margin: auto;
+}
+
+/* giving style to form-group label*/
+
+.form-group label {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* giving style to form-group input,
+   form-group textarea*/
+
+.form-group input,
+.form-group textarea {
+  padding: 6px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+/* giving style to form-group textarea*/
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* giving style to form-group button*/
+
+.form-group button {
+  margin: 16px 0 0 115px;
+}

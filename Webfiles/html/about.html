@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+
+      body {
+        background-color: #f8f5f1;
+      }
+    </style>
+    <title>SwiftStep - About Us</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+
+    <header>
+      <!-- Navbar Section -->
+
+      <!-- Top Navbar -->
+
+      <nav class="top-navbar">
+        <!-- Logo Section -->
+
+        <div class="logo" style="width: 180px">
+          <a href="index.html"><img src="/img/site-logo.png" alt="logo" /></a>
+        </div>
+
+        <!-- Search, Cart, SignUp Section -->
+        <!-- Importing Icons from boxicons -->
+
+        <div class="icons" style="padding-top: 5px">
+          <span class="search-icon" id="search-icon">
+            <a href="#"><i class="bx bx-search"></i></a>
+          </span>
+
+          <span class="cart-icon">
+            <a href="#"><i class="bx bx-cart"></i></a>
+          </span>
+
+          <span class="user-icon" id="user-icon">
+            <a href="#"><i class="bx bx-user"></i></a>
+          </span>
+        </div>
+      </nav>
+
+      <!-- Top Navbar End -->
+
+      <!-- Bottom Navbar -->
+
+      <nav class="bottom-navbar">
+        <!-- Ul and li tag to add other page links -->
+
+        <ul style="list-style: none">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+
+          <li>
+            <a href="product.html">Product</a>
+          </li>
+
+          <li>
+            <a href="research.html">Research Section</a>
+          </li>
+
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Bottom Navbar End-->
+
+      <!--Navbar End-->
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Main Section -->
+
+    <main>
+      <section class="hero-section">
+        <div
+          class="title-sontainer"
+          style="background-color: #f0ebe3; width: 100%; padding: 50px"
+        >
+          <h1 class="title">About Us</h1>
+        </div>
+      </section>
+
+      <section class="About-Section">
+        <div class="container">
+          <div class="main-container">
+            <div class="member-card">
+              <img src="/img/badal.jpeg" alt="Badal Shrestha" />
+              <h2>Badal Shrestha</h2>
+              <p>Project Leader</p>
+              <button onclick="openUrl()">View Portfolio</button>
+            </div>
+
+            <div class="member-card">
+              <img src="/img/bibek.jpeg" alt="Bibek Tamang" />
+              <h2>Bibek Tamang</h2>
+              <p>Designer and Developer</p>
+              <button>View Portfolio</button>
+            </div>
+          </div>
+
+          <div class="main-container">
+            <div class="member-card">
+              <img src="/img/pranish.jpeg" alt="Pranish Shakya" />
+              <h2>Pranish Shakya</h2>
+              <p>Content Creator</p>
+              <button>View Portfolio</button>
+            </div>
+
+            <div class="member-card">
+              <img src="/img/sauzan.jpeg" alt="Saujan Rai" />
+              <h2>Saujan Rai</h2>
+              <p>Desiginer</p>
+              <button>View Portfolio</button>
+            </div>
+          </div>
+
+          <div class="main-container">
+            <div class="member-card">
+              <img src="/img/muskan.jpeg" alt="Muskan Mishara" />
+              <h2>Muskan Mishara</h2>
+              <p>Technical Writer and Researcher</p>
+              <button>View Portfolio</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Feedback-Section">
+        <div class="feedback" id="feedback">
+          <h1 class="section-heading">Feedback Form</h1>
+          <div class="contact-form">
+            <form id="contactForm" onsubmit="return validateForm()">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+
+                <button type="submit" class="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Home Page Section-->
+
+    <!-- Footer Section -->
+
+    <footer>
+      <!-- Making main container for footer -->
+
+      <div class="footer-top">
+        <!-- Using table to make different columns -->
+
+        <table class="footer-table">
+          <tr>
+            <!-- About Us Section -->
+
+            <td>
+              <div class="footer-heading">About Us</div>
+
+              <div class="about-text">
+                Discover our collection of most comfortable footwear crafter
+                with unique design.
+              </div>
+            </td>
+
+            <!-- Quick Links Section -->
+
+            <td>
+              <div class="footer-heading">Quick Links</div>
+
+              <div class="quick-links">
+                <a href="/html/blog.html">Blog</a>
+                <a href="/html/product.html">Product</a>
+                <a href="/html/research.html">Research</a>
+                <a href="/html/about.html">About Us</a>
+              </div>
+            </td>
+
+            <!-- Contact Us Section -->
+
+            <td>
+              <div class="footer-heading">Contact Us</div>
+
+              <div class="contact">
+                <p>Email: swiftstep@gmail.com</p>
+                <p>Phone: +977 9800000000</p>
+                <p>Address: Sundarharaicha-04, Morang</p>
+              </div>
+            </td>
+
+            <!-- Adding Logos from boxicons -->
+
+            <td>
+              <div class="footer-heading">Follow Us</div>
+
+              <div class="social-icon-holder">
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-tiktok"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Footer bottom for copyright section -->
+
+        <div class="footer-bottom">
+          <p>&copy Swift Step. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <script src="/js/about.js"></script>
+  </body>
+</html>

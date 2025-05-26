@@ -1,0 +1,142 @@
+/* Navbar CSS */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  padding: 25px 100px;
+}
+
+.navigation-bar {
+  padding: 0 60px; /* Giving space between  */
+  display: flex; /* To align logo text and section links side to side */
+  justify-content: space-between; /* To give space between logo text and section links */
+  align-items: center; /* To align the logo text and section links */
+}
+
+.username h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.navigation-items ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+
+.navigation-items ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navigation-items ul li a:hover {
+  color: #3498db;
+}
+
+main {
+  width: 1200px;
+  margin: 32px 160px;
+  padding: 32px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.home-heading {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+.home-description p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.button {
+  padding: 16px 32px;
+  margin-top: 32px;
+  border: 1.25px solid #3498db;
+  color: #3498db;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.home-right img {
+  height: 600px;
+}
+
+.section-heading {
+  padding-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: black;
+}
+
+.education-details,
+.skills-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.education-item h2 {
+  margin-bottom: 8px;
+}
+
+.education-item,
+.skills-item {
+  padding: 32px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-item:hover,
+.skills-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+  width: 350px;
+  margin: auto;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 6px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.form-group button {
+  margin: 16px 0 0 85px;
+}

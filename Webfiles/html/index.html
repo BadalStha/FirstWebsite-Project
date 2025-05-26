@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+
+      body {
+        background-color: #f8f5f1;
+      }
+    </style>
+    <title>SwiftStep - Home</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+
+    <header>
+      <!-- Navbar Section -->
+
+      <!-- Top Navbar -->
+
+      <nav class="top-navbar">
+        <!-- Logo Section -->
+
+        <div class="logo" style="width: 180px">
+          <a href="/html/index.html"
+            ><img src="/img/site-logo.png" alt="logo"
+          /></a>
+        </div>
+
+        <!-- Search, Cart, SignUp Section -->
+        <!-- Importing Icons from boxicons -->
+
+        <div class="icons" style="padding-top: 5px">
+          <span class="search-icon" id="search-icon">
+            <a href="#"><i class="bx bx-search"></i></a>
+          </span>
+
+          <span class="cart-icon">
+            <a href="#"><i class="bx bx-cart"></i></a>
+          </span>
+
+          <span class="user-icon" id="user-icon">
+            <a href="/html/login.html"><i class="bx bx-user"></i></a>
+          </span>
+        </div>
+      </nav>
+
+      <!-- Top Navbar End -->
+
+      <!-- Bottom Navbar -->
+
+      <nav class="bottom-navbar">
+        <!-- Ul and li tag to add other page links -->
+
+        <ul style="list-style: none">
+          <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="/html/blog.html">Blog</a>
+          </li>
+
+          <li>
+            <a href="/html/product.html">Product</a>
+          </li>
+
+          <li>
+            <a href="/html/research.html">Research Section</a>
+          </li>
+
+          <li>
+            <a href="/html/about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Bottom Navbar End-->
+
+      <!--Navbar End-->
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Section -->
+
+      <section class="hero-section" onclick="openProductPage()">
+        <div class="slider">
+          <div id="img">
+            <img src="/img/slider1.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero Section End -->
+
+      <!--Latest Shoes Section-->
+
+      <section class="showcase">
+        <div class="product-main">
+          <h2 class="section-title">Featured Shoes</h2>
+
+          <div class="product-container">
+            <div class="product-card">
+              <img src="/img/product-4.webp" alt="shoe 1" />
+              <h3>Converse Top Black Sport Sneakers</h3>
+              <p>Rs 5,999</p>
+              <button onclick="openProduct()">View Details</button>
+            </div>
+
+            <div class="product-card">
+              <img src="/img/product-7.webp" alt="shoe 2" />
+              <h3>Foreign Sport Shoes</h3>
+              <p>Rs 5,999</p>
+              <button onclick="openProductPage()">View Details</button>
+            </div>
+
+            <div class="product-card">
+              <img src="/img/product-8.webp" alt="shoe 3" />
+              <h3>Doug Shoes</h3>
+              <p>Rs 4,999</p>
+              <button onclick="openProductPage()">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Products By Brands-->
+
+      <section class="brands">
+        <div class="product-main" style="background-color: #faf3e9">
+          <h2 class="section-title">Shoes By Brand</h2>
+
+          <div class="brand-container">
+            <div class="brand-card" onclick="openProductPage()">
+              <img src="/img/product.1.webp" alt="shoe 1" />
+              <h3>Sneakers : Ivory</h3>
+            </div>
+
+            <div class="brand-card" onclick="openProductPage()">
+              <img src="/img/product-2.jpg" alt="shoe 2" />
+              <h3>Jordan</h3>
+            </div>
+
+            <div class="brand-card" onclick="openProductPage()">
+              <img src="/img/product-5.webp" alt="shoe 3" />
+              <h3>Martin</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Subscription with email -->
+
+      <section class="newsletter" style="margin-top: 150px">
+        <div class="newsletter-container">
+          <form onsubmit="return verifyEmail()">
+            <div class="box">
+              <h4>Stay Updated</h4>
+
+              <p>
+                Subscribe to our newsletter for exclusive offers and updates
+              </p>
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                class="input-email"
+                id="email"
+              />
+
+              <button type="submit" class="submit-button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--Home Page Section-->
+
+    <!-- Footer Section -->
+
+    <footer>
+      <!-- Making main container for footer -->
+
+      <div class="footer-top">
+        <!-- Using table to make different columns -->
+
+        <table class="footer-table">
+          <tr>
+            <!-- About Us Section -->
+
+            <td>
+              <div class="footer-heading">About Us</div>
+
+              <div class="about-text">
+                Discover our collection of most comfortable footwear crafter
+                with unique design.
+              </div>
+            </td>
+
+            <!-- Quick Links Section -->
+
+            <td>
+              <div class="footer-heading">Quick Links</div>
+
+              <div class="quick-links">
+                <a href="/html/blog.html">Blog</a>
+                <a href="/html/product.html">Product</a>
+                <a href="/html/research.html">Research</a>
+                <a href="/html/about.html">About Us</a>
+              </div>
+            </td>
+
+            <!-- Contact Us Section -->
+
+            <td>
+              <div class="footer-heading">Contact Us</div>
+
+              <div class="contact">
+                <p>Email: swiftstep@gmail.com</p>
+                <p>Phone: +977 9800000000</p>
+                <p>Address: Sundarharaicha-04, Morang</p>
+              </div>
+            </td>
+
+            <!-- Adding Logos from boxicons -->
+
+            <td>
+              <div class="footer-heading">Follow Us</div>
+
+              <div class="social-icon-holder">
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-tiktok"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Footer bottom for copyright section -->
+
+        <div class="footer-bottom">
+          <p>&copy Swift Step. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <script src="/js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+/* giving style to section-header*/
+
+.section-header {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+/* giving style to container*/
+
+.container {
+  display: flex;
+  background-color: #f7ede1;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* giving style to img-container img*/
+
+.img-container img {
+  width: 100%;
+}
+
+/* giving style to text-container*/
+
+.text-container {
+  padding: 20px 250px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height: 1.8;
+  margin: 40px 0;
+}
+
+/* giving style to text-container p span*/
+
+.text-container p span {
+  background-color: #2c3238;
+  padding: 10px;
+}

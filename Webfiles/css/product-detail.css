@@ -1,0 +1,205 @@
+/* Giving style to product image and detail */
+.product-container {
+  display: flex; /* used for arranging items in rows or columns */
+  background-color: #faf9f7; /* Giving background color */
+  padding: 80px 140px; /* Giving space around an element's content, from top and side of any defined borders.*/
+}
+
+/* Giving style to image */
+.image {
+  margin-right: 50px; /* used to create space around elements, outside from rightside of any defined borders. */
+}
+
+.real-image {
+  width: 600px; /* changing its length */
+  height: 500px; /* changing its height */
+}
+
+.details {
+  width: 100%; /* changing its length */
+  padding: 30px; /* Giving space around an element's content from all side.*/
+}
+
+.details h1 {
+  font-size: 32px;
+  margin-bottom: 25px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+.details img {
+  width: 100px; /* changing its length */
+}
+
+.details .rating-number {
+  display: flex; /* used for arranging items in rows or columns */
+  font-size: 18px;
+  margin-bottom: 15px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+.rating-number img {
+  margin-right: 10px; /* used to create space around elements, outside from rightside of any defined borders. */
+  height: 20px; /* changing its height */
+}
+
+.rating-number p {
+  padding-top: 3px; /* Giving space around an element's content, from top of any defined borders.*/
+}
+
+/* Giving styling for the price border top and down */
+.price {
+  border-top: 1px solid rgb(197, 197, 197);
+  border-bottom: 1px solid rgb(197, 197, 197);
+  padding: 20px 0; /* Giving space around an element's content, from top and side of any defined borders.*/
+  margin-bottom: 30px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+/* giving line-through for the discount price */
+.price p {
+  text-decoration: line-through;
+  color: rgb(197, 197, 197); /* Giving color */
+}
+
+.size-container {
+  display: flex; /* used for arranging items in rows or columns */
+  margin-top: 15px; /* used to create space around elements, outside from top of any defined borders. */
+}
+
+.size-container .size-selector {
+  padding: 15px 28px; /* Giving space around an element's content, from top and side of any defined borders.*/
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 4px; /* giving radius in the element's corners */
+  margin-right: 10px; /* used to create space around elements, outside from rightside of any defined borders. */
+  margin-bottom: 20px; /* used to create space around elements, outside from bottom of any defined borders. */
+  background-color: white; /* Giving background color */
+  cursor: pointer;
+}
+
+.quantity {
+  display: flex; /* used for arranging items in rows or columns */
+  margin-bottom: 30px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+.button-container {
+  display: flex; /* used for arranging items in rows or columns */
+}
+
+.button-container button {
+  padding-left: 50px; /* Giving space around an element's content, from leftside of any defined borders.*/
+  padding-right: 50px; /* Giving space around an element's content, from right side of any defined borders.*/
+  margin-left: 38px; /* used to create space around elements, outside from leftside of any defined borders. */
+  background-color: black; /* Giving background color */
+  color: white; /* Giving color */
+  border: none;
+  border-radius: 100px; /* giving radius in the element's corners */
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px; /* changing its height */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* used to apply one or more shadows to an element. */
+}
+
+/*we are changing the background color of button-container button when we are hovering the mouse*/
+
+.button-container button:hover {
+  background-color: white; /* Giving background color */
+  color: black; /* Giving color */
+}
+
+/*Giving style for product details*/
+
+.product-details {
+  padding: 50px; /* Giving space around an element's content, from all side of any defined borders.*/
+  margin-bottom: 150px; /* used to create space around elements, outside from bottom of any defined borders. */
+  width: 50%; /* changing its length */
+  line-height: 2;
+}
+
+.product-details h3 {
+  font-size: 25px;
+  margin-bottom: 10px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+.product-details ul {
+  padding-left: 50px; /* Giving space around an element's content, from left side of any defined borders.*/
+  margin-bottom: 30px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+.product-slider {
+  padding: 20px; /* Giving space around an element's content, from all side of any defined borders.*/
+  text-align: center;
+  margin-bottom: 50px; /* used to create space around elements, outside from bottom of any defined borders. */
+  background-color: #f9f3ed;
+}
+
+.more-container {
+  display: flex; /* used for arranging items in rows or columns */
+  justify-content: center;
+  gap: 30px;
+}
+
+.more-card {
+  background-color: #fff; /* Giving background color */
+  border-radius: 10px; /* giving radius in the element's corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px; /* Giving space around an element's content, from all side of any defined borders.*/
+  width: 400px; /* changing its length */
+  height: 400px; /* changing its height */
+}
+
+.section-title {
+  margin-bottom: 30px; /* used to create space around elements, outside from bottom of any defined borders. */
+  font-weight: 900;
+}
+
+.more-card img {
+  height: 85%; /* changing its height */
+  width: 100%; /* changing its length */
+  border-radius: 10px; /* giving radius in the element's corners */
+  margin-bottom: 20px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+.container {
+  display: flex; /* used for arranging items in rows or columns */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px; /* used to create space around elements, outside from bottom of any defined borders. */
+}
+
+#cart-counter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4444; /* Giving background color */
+  color: white; /* Giving color */
+  border-radius: 50%; /* giving radius in the element's corners */
+  padding: 2px 6px; /* Giving space around an element's content, from top and side of any defined borders.*/
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px; /* used to create space around elements, outside from rightside of any defined borders. */
+}
+
+.cart-icon {
+  position: relative;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.size-selector {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-selector:hover {
+  background-color: #f0f0f0;
+}
+
+.size-selector.selected {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}

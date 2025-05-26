@@ -1,0 +1,133 @@
+.slider img {
+  width: 100%; /* Giving width 100% to the hero section for the image to have same width as body */
+}
+
+.product-main {
+  padding: 20px; /* Giving  spacing outside of element but inside of border in features shoes and shoes by brand */
+  text-align: center; /* Aligning the section head in middle. It aligns text in center */
+  margin-bottom: 50px; /* Giving Spacing down the feature shoes and shoes by brand */
+}
+
+.product-container {
+  display: flex; /* Flex is used too fill the blank space in product container and to use justify content */
+  justify-content: center; /* it makes the elements in product container to be in middle of the div */
+  gap: 30px; /* It gives spacing between div box as the name suggest it makes gap between element */
+}
+
+.product-card {
+  background-color: white; /* To give background color of product card */
+  border-radius: 10px; /* Giving border radius 10px to make the product card box edge curve */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Giving box shadow the first value gives shadow to the right, second value gives shadow at bottom and the third value gives the length of the shadow that will spread, and rgba will give black color because of all three zero values and the a or alpha value is opacity of the color  */
+  text-align: center; /* Making the text to align center */
+  padding: 10px; /* Giving padding inside the product card box to make the box elements little inside */
+  width: 450px; /* It sets the width of the product card */
+  height: 550px; /* It sets the height of the product card */
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);/* Giving box shadow the first value gives shadow to the right, second value gives shadow at bottom and the third value gives the length of the shadow that will spread, and rgba will give black color because of all three zero values and the a or alpha value is opacity of the color  */
+  transition: box-shadow 0.3s, transform 0.4s; /* It is used to make the transition of box shadow and transform change on hove smooth */
+  transform: translateY(-10px); /* It makes the product card go up when hovering by moving up by 10px */
+}
+
+.product-card img {
+  height: 75%; /* It gives 75% height of the total product card size */
+  width: 100%; /* It sets the product card width to 100% of the total size */
+  border-radius: 10px; /* Giving border radius 10px to make the product card box edge curve */
+  margin-bottom: 20px; /* Giving Spacing down the product card image */
+}
+
+.product-card button {
+  background-color: black; /* To give background color of product card button */
+  color: white; /* To give text color of product card button*/
+  border: none; /* Setting the border to none to remove border of the button */
+  padding: 10px 20px; /* Setting padding value, first is for giving space out side element and inside border on top and bottom, and the second value is for left and right spacing */
+  border-radius: 30px; /* Giving border radius 30px to make the product card box edge curve */
+  cursor: pointer; /* Setting cursor to pointer to change mouse pointer to cursor when hovering */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Giving box shadow the first value gives shadow to the right, second value gives shadow at bottom and the third value gives the length of the shadow that will spread, and rgba will give black color because of all three zero values and the a or alpha value is opacity of the color  */
+  font-weight: bold; /* Making the font weight bold */
+}
+
+.product-card button:hover {
+  background-color: white; /* To give background color of product card button on hover */
+  color: black; /* To give text color of product card button on hover */
+  transition: background-color 0.3s, color 0.3s; /* It is used to make the transition of product card button background color and color to make it smooth */
+}
+
+.section-title {
+  margin-bottom: 30px; /* Giving Spacing down the section title */
+  font-weight: 900; /* Making the font weight bold */
+}
+
+h3 {
+  margin-bottom: 15px; /* Giving Spacing down the heading 3 */
+}
+
+.product-card p {
+  margin-bottom: 15px; /* Giving Spacing down the product card paragraph */
+}
+
+.brand-container {
+  display: flex; /* Flex is used too fill the blank space in brand container and to use justify content */
+  justify-content: center; /* it makes the elements in brand container to be in middle of the div */
+  gap: 30px; /* It gives spacing between div box as the name suggest it makes gap between element */
+}
+
+.brand-card {
+  background-color: white; /* To give background color of bramd card */
+  border-radius: 10px; /* Giving border radius 10px to make the brand card box edge curve */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Giving box shadow the first value gives shadow to the right, second value gives shadow at bottom and the third value gives the length of the shadow that will spread, and rgba will give black color because of all three zero values and the a or alpha value is opacity of the color  */
+  text-align: center; /* Aligning the text of brand card in middle. It aligns text in center */
+  padding: 10px; /* Giving space all around the brand card */
+  width: 400px; /* It sets the width of the brand card */
+  height: 400px; /* It sets the height of the brand card */
+}
+
+.brand-card:hover {
+  transform: scale(1.1); /* Transforms the brand card to scale by 1.1 when hovering */
+  transition: transform 0.5s; /* It is used to make the transition of brand card transform scale to make it smooth */
+}
+
+.brand-card img {
+  height: 85%; /* It gives 75% height of the total brand card size */
+  width: 100%; /* It sets the brand card width to 100% of the total size */
+  border-radius: 10px; /* Giving border radius 10px to make the brand card image edge curve */
+  margin-bottom: 20px; /* Creating space down the brand card image */
+}
+
+.newsletter-container {
+  display: flex; /* Flex is used too fill the blank space in product container and to use justify content */
+  justify-content: center; /* it makes the elements in newsletter container to be in middle of the div */
+  align-items: center; /* It sets the items in center */
+  text-align: center; /* It aligns the text to center */
+  margin-bottom: 100px; /* Giving margin bottom to create space down the newsletter container */
+}
+
+.box h4 {
+  font-size: 25px; /* Setting the font size of heading 4 */
+  font-weight: 900; /* Setting the font weight of heading 4 */
+  margin-bottom: 8px; /* Giving margin bottom to create space down the heading 4 */
+}
+
+.box p {
+  font-size: 18px; /* Setting the font size of paragraph*/
+  font-weight: 100; /* Setting the font weight of paragraph*/
+  margin-bottom: 30px; /* Giving margin bottom to create space down the paragraph */
+}
+
+.input-email {
+  border-radius: 30px; /* Giving border radius 30px to make the product card box edge curve */
+  border: none; border: none; /* Setting the border to none to remove border of the email input box */
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /* Giving box shadow the first value gives shadow to the right, second value gives shadow at bottom and the third value gives the length of the shadow that will spread, and rgba will give black color because of all three zero values and the a or alpha value is opacity of the color  */
+  margin-right: 10px; /* Giving margin right to create space side of the email input */
+  width: 340px; /* It sets the width of the email input box */
+  padding: 15px 18px; /* Setting padding value, first is for giving space out side element and inside border on top and bottom, and the second value is for left and right spacing */
+}
+
+.submit-button {
+  border: none;
+  border-radius: 30px; /* Giving border radius 30px to make the product card box edge curve */
+  padding: 15px 30px; /* Setting padding value, first is for giving space out side element and inside border on top and bottom, and the second value is for left and right spacing */
+  background-color: #2c3238; /* To give background color of submit button*/
+  color: white; /* To give text color of submit button*/
+}
