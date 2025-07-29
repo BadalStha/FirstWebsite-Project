@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+
+      body {
+        background-color: #f8f5f1;
+      }
+    </style>
+    <title>SwiftStep - About Us</title>
+  </head>
+
+  <body class="about-page">
+    <!-- Header Section -->
+
+    <header>
+      <!-- Navbar Section -->
+
+      <!-- Top Navbar -->
+
+      <nav class="top-navbar">
+        <!-- Logo Section -->
+
+        <div class="logo" style="width: 180px">
+          <a href="index.html"><img src="img/site-logo.png" alt="logo" /></a>
+        </div>
+
+        <!-- Search, Cart, SignUp Section -->
+        <!-- Importing Icons from boxicons -->
+
+        <div class="icons" style="padding-top: 5px">
+          <span class="search-icon" id="search-icon">
+            <a href="#"><i class="bx bx-search"></i></a>
+            <div class="search-container" id="search-container" style="display: none;">
+              <input type="text" id="search-input" placeholder="Search products..." onkeyup="searchProducts()">
+            </div>
+          </span>
+
+          <span class="cart-icon">
+            <a href="#" onclick="viewCart()"><i class="bx bx-cart"></i></a>
+            <span id="cart-counter">0</span>
+          </span>
+
+          <span class="user-icon" id="user-icon">
+            <a href="login.html"><i class="bx bx-user"></i></a>
+          </span>
+
+          <!-- Hamburger Menu -->
+          <div class="hamburger-menu">
+            <button class="hamburger-icon" onclick="toggleMobileMenu()">
+              <i class='bx bx-menu'></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Top Navbar End -->
+
+      <!-- Bottom Navbar -->
+
+      <nav class="bottom-navbar">
+        <!-- Ul and li tag to add other page links -->
+
+        <ul style="list-style: none">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="product.html">Product</a>
+          </li>
+
+          <li>
+            <a href="research.html">Research Section</a>
+          </li>
+
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Bottom Navbar End-->
+
+      <!--Navbar End-->
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+        <i class='bx bx-x'></i>
+      </button>
+      
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="index.html" class="mobile-nav-link">
+              <i class='bx bx-home'></i>
+              Home
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="product.html" class="mobile-nav-link">
+              <i class='bx bx-shopping-bag'></i>
+              Products
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="research.html" class="mobile-nav-link">
+              <i class='bx bx-search-alt'></i>
+              Research Section
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="about.html" class="mobile-nav-link">
+              <i class='bx bx-info-circle'></i>
+              About Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="mobile-menu-footer">
+        <p>&copy; 2025 SwiftStep. All rights reserved.</p>
+      </div>
+    </div>
+
+    <!-- Header End -->
+
+    <!-- Main Section -->
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">About SwiftStep</h1>
+            <p class="hero-subtitle">Pioneering the future of footwear through innovation, comfort, and style</p>
+            <div class="hero-underline"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Company Story Section -->
+      <section class="story-section">
+        <div class="story-container">
+          <div class="story-content">
+            <h2>Our Story</h2>
+            <p>
+              SwiftStep was born from a simple belief: everyone deserves footwear that doesn't compromise 
+              between comfort and style. Our journey began with a team of passionate designers and technologists 
+              who recognized the gap in the market for truly innovative athletic footwear.
+            </p>
+            <p>
+              Today, we continue to push the boundaries of footwear design, combining cutting-edge technology 
+              with timeless aesthetics to create shoes that enhance your every step.
+            </p>
+          </div>
+          <div class="story-stats">
+            <div class="stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years of Innovation</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">10K+</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Shoe Models</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team-section">
+        <div class="team-header">
+          <h2>Meet Our Team</h2>
+          <p>The passionate individuals behind SwiftStep's success</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="member-card" style="min-height: 450px; padding-bottom: 30px;">
+            <div class="member-image">
+              <img src="img/badal.jpeg" alt="Badal Shrestha" />
+              <div class="member-overlay">
+                <button onclick="window.open('https://badalshrestha0.com.np/', '_blank')" class="portfolio-btn">
+                  <i class="bx bx-link-external"></i>
+                  View Portfolio
+                </button>
+              </div>
+            </div>
+            <div class="member-info" style="padding: 20px;">
+              <h3>Badal Shrestha</h3>
+              <p class="member-role">Project Leader</p>
+              <p class="member-description" style="margin-bottom: 40px; padding-bottom: 20px;">Leading innovative projects with strategic vision and technical expertise.</p>
+            </div>
+          </div>
+
+          <div class="member-card" style="min-height: 450px; padding-bottom: 30px;">
+            <div class="member-image">
+              <img src="img/bibek.jpeg" alt="Bibek Tamang" />
+              <div class="member-overlay">
+                <button class="portfolio-btn">
+                  <i class="bx bx-link-external"></i>
+                  View Portfolio
+                </button>
+              </div>
+            </div>
+            <div class="member-info" style="padding: 20px;">
+              <h3>Bibek Tamang</h3>
+              <p class="member-role">Designer and Developer</p>
+              <p class="member-description" style="margin-bottom: 40px; padding-bottom: 20px;">Crafting beautiful and functional designs that enhance user experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-content">
+            <h2>Get In Touch</h2>
+            <p>Have questions about our products or want to join our team? We'd love to hear from you!</p>
+          </div>
+          
+          <div class="contact-form-wrapper">
+            <form id="contactForm" onsubmit="return validateForm()" class="modern-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" placeholder="Enter your email" required />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="What's this about?" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell us more..." rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <i class="bx bx-send"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Home Page Section-->
+
+    <!-- Footer Section -->
+
+    <footer>
+      <!-- Making main container for footer -->
+
+      <div class="footer-top">
+        <!-- Using table to make different columns -->
+
+        <table class="footer-table">
+          <tr>
+            <!-- About Us Section -->
+
+            <td>
+              <div class="footer-heading">About Us</div>
+
+              <div class="about-text">
+                Discover our collection of most comfortable footwear crafter
+                with unique design.
+              </div>
+            </td>
+
+            <!-- Quick Links Section -->
+
+            <td>
+              <div class="footer-heading">Quick Links</div>
+
+              <div class="quick-links">
+                <a href="product.html">Product</a>
+                <a href="research.html">Research</a>
+                <a href="about.html">About Us</a>
+              </div>
+            </td>
+
+            <!-- Contact Us Section -->
+
+            <td>
+              <div class="footer-heading">Contact Us</div>
+
+              <div class="contact">
+                <p>Email: swiftstep@gmail.com</p>
+                <p>Phone: +977 9800000000</p>
+                <p>Address: Sundarharaicha-04, Morang</p>
+              </div>
+            </td>
+
+            <!-- Adding Logos from boxicons -->
+
+            <td>
+              <div class="footer-heading">Follow Us</div>
+
+              <div class="social-icon-holder">
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-tiktok"></i></a>
+                </div>
+
+                <div class="social-icon">
+                  <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Footer bottom for copyright section -->
+
+        <div class="footer-bottom">
+          <p>&copy Swift Step. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
